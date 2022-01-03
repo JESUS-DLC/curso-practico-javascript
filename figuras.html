@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/laptop.css" media="(min-width:930px)">
+    <title>FIGURAS GEOMETRICAS</title>
+</head>
+<body>
+    <header>
+        <h1>FIGURAS GEOMETRICAS</h1>
+    </header>
+
+    <main>
+        <section class="calculos-container">
+            <article class="cuadrado-container">
+                <h2>Calcula el area y perimetro de un cuadrado</h2>
+                <form action="" class="form-calculo">
+                    <img src="img/cuardado 3.webp" alt="">
+                    <label for="inputCuadrado">Medida del lado:</label>
+                    <input id="inputCuadrado" type="number" placeholder="escribe la media del lado">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">calcular el perimetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">calcular el area</button>
+                    <label id="resultado1"></label>
+                </form>
+            </article>
+            <article class="triangulo-container">
+                <h2>Calcula el area y perimetro de un triangulo</h2>
+                <form action="" class="form-calculo form-triangulo">
+                    <img src="img/marco-luz-neon_53876-93482.jpg" alt="">
+                    <label for="inputLado1">Medida del lado 1:</label>
+                    <input id="inputLado1" type="number" placeholder="escribe la media del lado 1">
+                    <label for="inputLado2">Medida del lado 2:</label>
+                    <input id="inputLado2" type="number" placeholder="escribe la media del lado 2">
+                    <label for="inputBase">Medida de la base:</label>
+                    <input id="inputBase" type="number" placeholder="escribe la media de la base">
+                    <label for="inputAltura">Medida de la altura:</label>
+                    <input id="inputAltura" type="number" placeholder="escribe la media de la altura">
+                    <button type="button" onclick="calcularPerimetroTriangulo()" >calcular el perimetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()" >calcular el area</button>
+                    <button type="button" onclick="calcularAlturaTriangulo()" >calcular altrua de tringulo isosceles</button>
+                    <label id="resultado2"></label>
+                </form>
+            </article>
+            <article class="circulo-container">
+                <h2>Calcula el area y perimetro de un circulo</h2>
+                <form action="" class="form-calculo">
+                    <img src="img/78881485-neon-abstracto-círculo-redondo-ilustración-vectorial.webp" alt="">
+                    <label for="inputRadio">Medida del radio:</label>
+                    <input type="number" id="inputRadio" placeholder="escribe la media del lado">
+                    <button type="button" onclick="calcularPerimetroCirculo()">calcular el perimetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">calcular el area</button>
+                    <label id="resultado3"></label>
+                </form>
+            </article>
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos reservados JESUSDLC</p>
+    </footer>
+
+    <script src="figuras.js"></script>
+</body>
+</html>
